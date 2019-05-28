@@ -1,0 +1,12 @@
+<h1>Tasks</h1>
+
+<% @tasks.each do |x| %>
+  <div>
+    <h3><%= link_to x.name, board %></h3>
+  </div>
+<% end %>
+
+<hr />
+<br />
+
+<%= link_to 'Add List', new_list_path, class: 'ui blue button' %>

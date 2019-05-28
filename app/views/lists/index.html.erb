@@ -1,0 +1,12 @@
+<h1>Lists</h1>
+
+<% @lists.each do |list| %>
+  <div>
+    <h3><%= link_to list.name, board_list_tasks_path(@board.id, list.id) %></h3>
+  </div>
+<% end %>
+
+<hr />
+<br />
+
+<%= link_to 'See Boards', boards_path, class: 'ui blue button' %>

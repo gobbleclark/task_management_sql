@@ -1,0 +1,10 @@
+<h1> Create List </h1>
+<%=form_with(model: [@board, @list], local: true, class: 'ui form') do |f|%>
+    <div class='field'>
+        <%=f.label :name %>
+        <%=f.text_field :name, class: 'item'%>
+    </div>
+    <%= f.submit nil, class: 'ui green button'%>
+    <% end %>
+
+    <%= link_to 'Back', board_lists_path(@board.id), class: 'ui blue button' %>

@@ -1,0 +1,13 @@
+
+<div class="ui card">
+  <div class="content">
+    <a class="header"> <%= @board.name %> </a>
+    <div class="meta">
+    </div>
+  <div class="extra content">
+  <hr />
+    <%= link_to "Lists", board_list_path(@board), class: "ui align left blue button"%>
+    <%= link_to "Delete Board", board_path, method: :delete, class: "ui al red inverted button"%>
+
+  </div>
+</div>
